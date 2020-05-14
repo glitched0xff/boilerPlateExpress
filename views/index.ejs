@@ -1,0 +1,90 @@
+
+<%# includo la head - questo è un commento ejs%> 
+<%- include('partials/head') %>
+<!-- Da qui parte il contenuto della pagina - Questo è un commento html -->
+<div class="container mt-2">
+    <div class="row border-bottom mb-4">
+        <h1>Test boiler platep</h1>
+        <h2>Test</h2>
+        <h3>test</h3>
+    </div>
+    <div class="row border-bottom mb-4 pb-2">
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Titolo card</h5>
+                    <p class="card-text">Contenuto card</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Titolo card</h5>
+                    <p class="card-text">Contenuto card</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row border-bottom mb-4 mx-auto">
+        <div class="row w-100">
+            <h2>Esempio form</h2>
+        </div>
+        
+        <div class="row w-100">
+             <form class="mx-auto">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                                checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                First radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Second radio
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                                disabled>
+                            <label class="form-check-label" for="gridRadios3">
+                                Third disabled radio
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+        </div>
+       
+    </div>
+</div>
+
+<script>
+   // Script js
+</script>
+<!-- importo il foot -->
+<%- include('partials/foot') %>
